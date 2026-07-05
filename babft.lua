@@ -256,7 +256,7 @@ TitleText.Position = UDim2.new(0, 15, 0, 0)
 TitleText.BackgroundTransparency = 1
 TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 TitleText.TextSize = 18
-TitleText.Font = Enum.Font.Outfit
+TitleText.Font = Enum.Font.SourceSansBold
 TitleText.TextXAlignment = Enum.TextXAlignment.Left
 TitleText.Text = "Gemini-XALoEX - BABFT Copier & AutoFarm"
 TitleText.Parent = TitleBar
@@ -269,7 +269,7 @@ CloseButton.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
 CloseButton.TextColor3 = Color3.fromRGB(255, 100, 100)
 CloseButton.Text = "X"
 CloseButton.TextSize = 16
-CloseButton.Font = Enum.Font.Outfit
+CloseButton.Font = Enum.Font.SourceSansBold
 CloseButton.Parent = TitleBar
 
 local closeCorner = Instance.new("UICorner")
@@ -318,7 +318,7 @@ FloatToggle.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
 FloatToggle.TextColor3 = Color3.fromRGB(0, 255, 255)
 FloatToggle.Text = "Menu"
 FloatToggle.TextSize = 14
-FloatToggle.Font = Enum.Font.Outfit
+FloatToggle.Font = Enum.Font.SourceSansBold
 FloatToggle.Parent = ScreenGui
 
 local floatCorner = Instance.new("UICorner")
@@ -356,7 +356,7 @@ ContentContainer.Position = UDim2.new(0, 140, 0, 45)
 ContentContainer.BackgroundTransparency = 1
 ContentContainer.Parent = MainFrame
 
--- Copier Tab Frame
+-- Tab Content Frames
 local CopierFrame = Instance.new("Frame")
 CopierFrame.Name = "CopierFrame"
 CopierFrame.Size = UDim2.new(1, 0, 1, 0)
@@ -390,7 +390,7 @@ local function createTabButton(name, text, positionY)
     button.TextColor3 = Color3.fromRGB(200, 200, 200)
     button.Text = text
     button.TextSize = 14
-    button.Font = Enum.Font.Outfit
+    button.Font = Enum.Font.SourceSans
     button.Parent = TabsContainer
 
     local btnCorner = Instance.new("UICorner")
@@ -454,7 +454,7 @@ SelectedPlayerLabel.Position = UDim2.new(0, 0, 0, 10)
 SelectedPlayerLabel.BackgroundTransparency = 1
 SelectedPlayerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 SelectedPlayerLabel.TextSize = 16
-SelectedPlayerLabel.Font = Enum.Font.Outfit
+SelectedPlayerLabel.Font = Enum.Font.SourceSans
 SelectedPlayerLabel.Text = "Цель: не выбрана"
 SelectedPlayerLabel.TextXAlignment = Enum.TextXAlignment.Left
 SelectedPlayerLabel.Parent = ControlPanel
@@ -467,7 +467,7 @@ CopyButton.BackgroundColor3 = Color3.fromRGB(0, 180, 255)
 CopyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CopyButton.Text = "Копировать постройку"
 CopyButton.TextSize = 16
-CopyButton.Font = Enum.Font.Outfit
+CopyButton.Font = Enum.Font.SourceSansBold
 CopyButton.Parent = ControlPanel
 
 local copyCorner = Instance.new("UICorner")
@@ -482,7 +482,7 @@ SubsButton.BackgroundColor3 = Color3.fromRGB(40, 180, 100)
 SubsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 SubsButton.Text = "Автозамена блоков: ВКЛ"
 SubsButton.TextSize = 14
-SubsButton.Font = Enum.Font.Outfit
+SubsButton.Font = Enum.Font.SourceSans
 SubsButton.Parent = ControlPanel
 
 local subsCorner = Instance.new("UICorner")
@@ -509,7 +509,7 @@ SaveNameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 SaveNameBox.PlaceholderText = "Имя сохранения..."
 SaveNameBox.Text = ""
 SaveNameBox.TextSize = 14
-SaveNameBox.Font = Enum.Font.Outfit
+SaveNameBox.Font = Enum.Font.SourceSans
 SaveNameBox.Parent = ControlPanel
 
 local saveNameCorner = Instance.new("UICorner")
@@ -524,7 +524,7 @@ SaveButton.BackgroundColor3 = Color3.fromRGB(120, 50, 180)
 SaveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 SaveButton.Text = "Сохранить скопированное"
 SaveButton.TextSize = 14
-SaveButton.Font = Enum.Font.Outfit
+SaveButton.Font = Enum.Font.SourceSansBold
 SaveButton.Parent = ControlPanel
 
 local saveCorner = Instance.new("UICorner")
@@ -538,7 +538,7 @@ StatusText.Position = UDim2.new(0, 0, 1, -25)
 StatusText.BackgroundTransparency = 1
 StatusText.TextColor3 = Color3.fromRGB(200, 200, 200)
 StatusText.TextSize = 12
-StatusText.Font = Enum.Font.Outfit
+StatusText.Font = Enum.Font.SourceSans
 StatusText.Text = "Готов к работе..."
 StatusText.TextXAlignment = Enum.TextXAlignment.Center
 StatusText.Parent = CopierFrame
@@ -564,7 +564,7 @@ local function updatePlayerList()
             pButton.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
             pButton.TextColor3 = Color3.fromRGB(255, 255, 255)
             pButton.TextSize = 14
-            pButton.Font = Enum.Font.Outfit
+            pButton.Font = Enum.Font.SourceSans
             pButton.Parent = PlayerListScroll
             
             local teamColor = player.Team and player.Team.TeamColor.Color or Color3.fromRGB(200, 200, 200)
@@ -767,7 +767,7 @@ SelectedSaveLabel.Position = UDim2.new(0, 0, 0, 10)
 SelectedSaveLabel.BackgroundTransparency = 1
 SelectedSaveLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 SelectedSaveLabel.TextSize = 16
-SelectedSaveLabel.Font = Enum.Font.Outfit
+SelectedSaveLabel.Font = Enum.Font.SourceSans
 SelectedSaveLabel.Text = "Выбранный слот: нет"
 SelectedSaveLabel.TextXAlignment = Enum.TextXAlignment.Left
 SelectedSaveLabel.Parent = SavedControlPanel
@@ -780,7 +780,7 @@ LoadButton.BackgroundColor3 = Color3.fromRGB(40, 180, 100)
 LoadButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoadButton.Text = "Построить из сохранения"
 LoadButton.TextSize = 16
-LoadButton.Font = Enum.Font.Outfit
+LoadButton.Font = Enum.Font.SourceSansBold
 LoadButton.Parent = SavedControlPanel
 
 local loadCorner = Instance.new("UICorner")
@@ -795,7 +795,7 @@ DeleteSaveButton.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 DeleteSaveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 DeleteSaveButton.Text = "Удалить сохранение"
 DeleteSaveButton.TextSize = 14
-DeleteSaveButton.Font = Enum.Font.Outfit
+DeleteSaveButton.Font = Enum.Font.SourceSans
 DeleteSaveButton.Parent = SavedControlPanel
 
 local deleteCorner = Instance.new("UICorner")
@@ -808,7 +808,7 @@ SavedStatusText.Position = UDim2.new(0, 0, 1, -25)
 SavedStatusText.BackgroundTransparency = 1
 SavedStatusText.TextColor3 = Color3.fromRGB(200, 200, 200)
 SavedStatusText.TextSize = 12
-SavedStatusText.Font = Enum.Font.Outfit
+SavedStatusText.Font = Enum.Font.SourceSans
 SavedStatusText.Text = "Файловая система готова..."
 SavedStatusText.Parent = SavedFrame
 
@@ -833,7 +833,7 @@ local function updateSavedList()
         sButton.TextColor3 = Color3.fromRGB(255, 255, 255)
         sButton.Text = saveName
         sButton.TextSize = 14
-        sButton.Font = Enum.Font.Outfit
+        sButton.Font = Enum.Font.SourceSans
         sButton.Parent = SavedListScroll
         
         local sStroke = Instance.new("UIStroke")
@@ -980,8 +980,6 @@ DeleteSaveButton.MouseButton1Click:Connect(function()
     
     if hasFileSystem() then
         pcall(function()
-            -- Depending on exploit version, there may not be delfile/deletefile
-            -- But we can overwrite it with empty file or just remove from index
             delfile("babft_build_" .. selectedSaveName .. ".json")
         end)
     end
@@ -1003,7 +1001,7 @@ FarmTitle.Position = UDim2.new(0, 0, 0, 10)
 FarmTitle.BackgroundTransparency = 1
 FarmTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 FarmTitle.TextSize = 18
-FarmTitle.Font = Enum.Font.Outfit
+FarmTitle.Font = Enum.Font.SourceSansBold
 FarmTitle.Text = "Золотой Автофарм (Безопасный)"
 FarmTitle.TextXAlignment = Enum.TextXAlignment.Left
 FarmTitle.Parent = FarmFrame
@@ -1014,10 +1012,10 @@ FarmInfo.Position = UDim2.new(0, 0, 0, 45)
 FarmInfo.BackgroundTransparency = 1
 FarmInfo.TextColor3 = Color3.fromRGB(200, 200, 200)
 FarmInfo.TextSize = 13
-FarmInfo.Font = Enum.Font.Outfit
+FarmInfo.Font = Enum.Font.SourceSans
 FarmInfo.TextWrapped = true
 FarmInfo.TextXAlignment = Enum.TextXAlignment.Left
-FarmInfo.Text = "Безопасный автофарм перемещает вашего персонажа через ключевые контрольные точки каждой зоны с небольшой задержкой (0.8с) для полноценного начисления золота сервером без бана."
+FarmInfo.Text = "Безопасный автофарм перемещает вашего персонажа через ключевые контрольные точки каждой зоны с небольшой задержкой (0.85с) для полноценного начисления золота сервером без бана."
 FarmInfo.Parent = FarmFrame
 
 -- Farm Toggle Button
@@ -1028,7 +1026,7 @@ FarmToggleButton.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
 FarmToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 FarmToggleButton.Text = "Автофарм: ВЫКЛЮЧЕН"
 FarmToggleButton.TextSize = 16
-FarmToggleButton.Font = Enum.Font.Outfit
+FarmToggleButton.Font = Enum.Font.SourceSansBold
 FarmToggleButton.Parent = FarmFrame
 
 local farmToggleCorner = Instance.new("UICorner")
@@ -1041,7 +1039,7 @@ FarmStatus.Position = UDim2.new(0, 0, 0, 200)
 FarmStatus.BackgroundTransparency = 1
 FarmStatus.TextColor3 = Color3.fromRGB(0, 255, 255)
 FarmStatus.TextSize = 14
-FarmStatus.Font = Enum.Font.Outfit
+FarmStatus.Font = Enum.Font.SourceSans
 FarmStatus.Text = "Статус: Ожидание..."
 FarmStatus.Parent = FarmFrame
 
